@@ -34,7 +34,6 @@ for event in eventsFiltered:
 
 # group by 
 taskConformation.sort(key=itemgetter('taskId'))
-
 taskCount = [] 
 for key, group in itertools.groupby(taskConformation, lambda item: item['taskId']):
     taskCount.append ( {key: sum([item['conformation'] for item in group]) })
