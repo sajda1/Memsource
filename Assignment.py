@@ -29,7 +29,6 @@ for event in eventsFiltered:
     
     if levels == confirmedLevel:
         taskConformation.append ({'taskId':taskId ,'conformation': 1} )
-        
     else:
         taskConformation.append ({'taskId':taskId ,'conformation': 0 })
 
